@@ -10,14 +10,21 @@
   </head>
   <body class="container-fluid">
     <h1>Word Puzzle</h1>
-    <form class="panel panel-info panel-padding" action="index.html" method="post">
+    <form id="form-one" class="panel panel-info panel-padding back-col-lightgreen" action="index.html" method="post">
       <label for="input">Sentence: </label>
       <input id="input" type="text">
+      <div class="">
+        <button type="submit" class="btn btn-modifier">Submit!</button>
+      </div>
+      <div class="">
+        <button id="btn-reveal" class="btn btn-modifier">Reveal</button>
+      </div>
     </form>
-    <button id="btn-submit" class="btn">Submit</button>
-    <button id="btn-reveal" class="btn">Reveal</button>
-    <p id="original" class="panel panel-info"></p>
-    <p id="output" class="panel panel-info"></p>
+
+    <p id="original" class="panel panel-info initial-hide"></p>
+
+
+    <p id="output" class="panel panel-info initial-hide"></p>
 
   </body>
 </html>

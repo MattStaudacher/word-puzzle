@@ -1,6 +1,6 @@
 //event.preventDefault();
 $(function() {
-  $("#btn-submit").click(function(event){
+  $("#form-one").submit(function(event){
     event.preventDefault();
     var sentence = $("#input").val().split("");
     var originalSentence = $("#input").val();
@@ -13,6 +13,7 @@ $(function() {
     }
     $("#output").text("Output: ");
     $("#output").append(sentence.join(""));
+    $("#output").slideDown();
     $("#input").val("");
     $("#original").hide();
     $("#original").text("Original: "+originalSentence);

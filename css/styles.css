@@ -6,3 +6,15 @@ body {
 .panel-padding {
   padding: 6px;
 }
+
+.back-col-lightgreen {
+  background-color: lightGreen;
+}
+
+.btn-modifier {
+  margin: 6px;
+}
+
+.initial-hide {
+  display: none;
+}
